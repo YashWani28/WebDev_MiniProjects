@@ -1,0 +1,77 @@
+:root{
+    --transition: all 0.1s linear;
+    --transition2: all 0.5s linear;
+
+}
+body{
+    background: rgba(0, 0, 0, 0.692);
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+.header button {
+    position: absolute;
+    right: 5vw;
+    /* margin: auto; */
+    /* width: 50%; */
+    display: block;
+    position: absolute;
+    right: 5vw;
+    top: 1vh;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(151, 209, 231);
+}
+.header button:hover{
+    background-color: rgb(81, 189, 232);
+    transition: var(--transition);
+    width: 78px;
+    height: 78px;
+}
+
+header h1{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+    /* #button{
+} */
+}
+#menu_container{
+    margin-top: 50px;
+}
+#menu{
+    padding-left: 0px;
+    list-style-type:none;
+}
+#menu li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: aliceblue;
+    border: solid black 2px;
+    padding-left: 0px;
+    color: black;
+    text-decoration: none;
+    font-size: 5vh;
+}
+
+#menu li:hover{
+    color:rgb(0, 102, 255);
+    
+    padding-left: 5px;
+    transition: var(--transition);
+}
+.links{
+    transition: var(--transition2);
+
+    height: 0;
+    overflow: hidden;
+    /*here we define the height of the content as 0...but the text overflows over the container and it is still visible to us...so to avoid this problem, we set overflow: hidden which tells the computer to hide the text that overflows over the container*/
+}
+.show-links{
+    overflow: auto;
+    height: 76vh;
+}

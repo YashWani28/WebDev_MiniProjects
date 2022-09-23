@@ -1,0 +1,13 @@
+.calc_container{
+    display:block;
+    width:50vw;
+    height: 100vh;
+    
+    margin: 10vh auto;
+    text-align: center;
+}
+.display{
+    width:12vw;
+
+    text-align: right;
+}
